@@ -1,12 +1,4 @@
 @font-face{
-    font-family: "Trans-bold";
-    src: url(./fonts/Transcend\ Bold.otf);
-}
-@font-face{
-    font-family: "Trans-medium";
-    src: url(./fonts/Transcend\ Medium.otf);
-}
-@font-face{
     font-family: "Trans-light";
     src: url(./fonts/Transcend\ Light.otf);
 }
@@ -15,6 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Trans-light";
 }
 
 .home-container{
@@ -52,7 +45,6 @@ nav{
 }
 
 nav h2{
-    font-family: "Trans-bold";
     font-weight: 500;
     font-size: 2rem;
     letter-spacing: 5px;
@@ -78,7 +70,6 @@ nav ul li{
     display: inline-block;
 }
 nav ul li a{
-    font-family: "Trans-light";
     margin-right: 30px;
     color: #fff;
     font-size: 1rem;
@@ -96,7 +87,6 @@ nav ul li a{
 }
 
 .home-section h1{
-    font-family: "Trans-bold";
     font-weight: 500;
     font-size: 60px;
     letter-spacing: 5px;
@@ -109,7 +99,6 @@ nav ul li a{
     line-height: 40px;
     letter-spacing: 5px;
     font-weight: 400;
-    font-family: "Trans-light";
 }
 .btn{
     display:grid;
@@ -127,7 +116,6 @@ nav ul li a{
     margin: 20px 0px;
     font-size: 0.7rem;
     letter-spacing: 3px;
-    font-family: "Trans-medium";
     padding: 0px 10px;
 }
 
