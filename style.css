@@ -471,7 +471,6 @@ nav ul li a{
 }
 .contact-container{
     width: 90%;
-    /* min-height: 100vh; */
     margin: 30px auto;
     display: grid;
     grid-template-columns: repeat(auto-fit , minmax(300px , 1fr));
