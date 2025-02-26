@@ -74,6 +74,23 @@
         grid-template-columns: 1fr;
     }
 
+    .portfolio-title{
+        font-size: 2rem;
+        line-height: 60px;
+        margin-bottom: 0;
+    }
+
+    .portfolio-box .box{
+        height: 300px;
+    }
+
+    .box .portfolio-inner-title span{
+        font-size: 1.3rem;
+        line-height: 40px;
+    }
+    
+    
+
     /* ---------------about-container--------------------- */
     .about-conatiner{
         display: grid;
