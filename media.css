@@ -35,7 +35,8 @@
     nav ul li a{
         color: #fff;
         text-decoration: none;
-        line-height: 60px;
+        font-size: .8rem;
+        line-height: 10px;
     }
 
     #icon{
@@ -48,8 +49,8 @@
     }
 
     .home-section h1{
-        font-size: 45px;
-        letter-spacing: 8px;
+        font-size: 40px;
+        letter-spacing: 5px;
     }
     
     .home-section h6{
@@ -75,7 +76,7 @@
     }
 
     .portfolio-title{
-        font-size: 2rem;
+        font-size: 1.7rem;
         line-height: 60px;
         margin-bottom: 0;
     }
@@ -128,7 +129,15 @@
         grid-template-rows: 1fr 1fr;
     }
     .book-box-1{
-        padding: 10px 10px 0 10px;
+        padding: 10px;
+    }
+    .book-box-2{
+        width: 100%;
+    }
+    .book-box-2 img{
+        min-height: 100%;
+        width: 100%;
+        padding: 0;
     }
     .book-container .book-box{
         grid-row-start: 1;
@@ -222,7 +231,17 @@
         margin: 0;
         padding: 0;
     }
+    .blog-box{
+        display: grid;
+        grid-template-columns: repeat(auto-fit , minmax(200px,1fr));
+        padding: 10px;
+     }
+
+    .blog-items{
+        width: 100%;
+    }
     .blog-items-1{
+        width: 100%;
         padding: 15px 10px;
     }
     
@@ -253,6 +272,9 @@
         line-height: 20px;
         text-align: justify;
     }
+    .blog-box-items{
+        width: 100%;    
+    }
     
     .blog-details hr {
       margin-top:70px;
@@ -269,6 +291,9 @@
         font-size: 1rem;
     }
     /* --------contact------------- */
+    .input-container{
+        width: 100%;
+    }
     .contact-box{
         padding: 10px;
         height: 400px;
