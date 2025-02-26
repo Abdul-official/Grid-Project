@@ -97,7 +97,7 @@
         grid-template-columns: 1fr;    
     }
     .about-box-1{
-        padding: 30px 40px;
+        padding: 10px 12px;
     }
     .about-box-1 p{
         text-align: justify;
@@ -108,8 +108,8 @@
     }
 
     .about-box-1 h5{
-        font-size: 1.8rem;
-        line-height: 50px;
+        font-size: 1.7rem;
+        line-height: 40px;
    }
    
    .about-box-1 h6{
