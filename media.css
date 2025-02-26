@@ -41,7 +41,7 @@
     #icon{
         display: block;
         color: #fff;
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
     #check:checked~ul{
         left: 0;
@@ -78,6 +78,13 @@
     .about-conatiner{
         display: grid;
         grid-template-columns: 1fr;    
+    }
+    .about-box-1{
+        /* padding: 100px 40px; */
+        padding: 30px 40px;
+    }
+    .about-box-1 p{
+        text-align: justify;
     }
     
     /* --------book - container------ */
