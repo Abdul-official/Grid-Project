@@ -103,6 +103,23 @@
         grid-row-start: 2;
         grid-row-end: 3;
     }
+    .book-box-1 h2{
+        font-size: 2rem;
+    }
+    
+    .book-box-1 p{
+        font-size: 1rem;
+    }
+    
+    .book-box-1 span{
+        font-size: 3rem;
+    }
+    
+    .book-box-1 button{
+        width: 100px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
 
     /* ------------gallery------- */
     .gallery-container{
