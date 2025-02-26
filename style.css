@@ -1,0 +1,576 @@
+@font-face{
+    font-family: "Trans-bold";
+    src: url(./fonts/Transcend\ Bold.otf);
+}
+@font-face{
+    font-family: "Trans-medium";
+    src: url(./fonts/Transcend\ Medium.otf);
+}
+@font-face{
+    font-family: "Trans-light";
+    src: url(./fonts/Transcend\ Light.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home-container{
+    background:linear-gradient(rgba(39, 58, 78,0.3),rgba(39, 58, 78,0.4),black),url("./Images/Home-Container.jpeg");
+    width: 100%; 
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(39,58,78,0.7));
+    width: 100%;
+    height: 60px;
+    position: relative;
+    display: grid;
+    grid-template-areas: "logos auto auto auto auto auto auto auto auto auto auto auto auto options icons";
+}
+
+#check{
+    display: none;
+}
+
+.active{
+    color: rgba(30, 122, 221, 0.9);
+}
+
+#logo{
+    
+    line-height: 60px;
+    padding: 0px 60px;
+    grid-area: logos;
+    color: #fff;
+}
+
+nav h2{
+    font-family: "Trans-bold";
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: 5px;
+}
+
+#icon{
+    display: none;
+    font-size: 30px;
+    line-height: 60px;
+    grid-area: icons;
+}
+
+#option{
+    grid-area: options;
+}
+
+nav ul{
+    text-align: end;
+    line-height: 60px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    font-family: "Trans-light";
+    margin-right: 30px;
+    color: #fff;
+    font-size: 1rem;
+    text-decoration:none ;
+}
+
+
+.home-section{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
+
+.home-section h1{
+    font-family: "Trans-bold";
+    font-weight: 500;
+    font-size: 60px;
+    letter-spacing: 5px;
+    color: #fff;
+}
+
+.home-section h6{
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 40px;
+    letter-spacing: 5px;
+    font-weight: 400;
+    font-family: "Trans-light";
+}
+.btn{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+.home-section button{
+    width: 150px;
+    height: 40px;
+    border: 2px solid #555;
+    border-radius: 10px;
+    background: transparent;
+    color: #fff;
+    align-content: center;
+    margin: 20px 0px;
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    font-family: "Trans-medium";
+    padding: 0px 10px;
+}
+
+/* ---------portfolio container----------- */
+.portfolio{
+    width: 100%;
+}
+
+.portfolio-container{
+    width: 90%;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #555,5px 5px 10px #555;
+    padding: 10px;
+}
+
+.portfolio-title{
+    color: #000;
+    font-size: 2.5rem;
+    line-height: 100px;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.portfolio-box{
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3 , 1fr);
+}
+
+.portfolio-box .box{
+    position: relative;
+    border-radius: 5px;
+    color: #fff;
+    height: 472px;
+    border: 1px solid #555;
+}
+
+.img1{
+    background:linear-gradient(rgba(39, 58, 78,0.3),rgba(39, 58, 78,0.4),black),url("./Images/1.jpg");
+    width: 100%;
+    height: 470px;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img2{
+    background:linear-gradient(rgba(39, 58, 78,0.3),rgba(39, 58, 78,0.4),black),url("./Images/2.jpg");
+    width: 100%;
+    height: 470px;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img3{
+    background:linear-gradient(rgba(39, 58, 78,0.3),rgba(39, 58, 78,0.4),black),url("./Images/3.jpg");
+    width: 100%;
+    height: 470px;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box .portfolio-inner-title span{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(39,58,78,0.7));
+    position: absolute;
+    width: 100%;
+    font-size: 2rem;
+    line-height: 60px;
+    top: 0;
+    text-align: center;
+    font-family: "Trans-light";
+}
+
+/* -----about-container---- */
+
+.about{
+    width: 100%;
+}
+
+.about-conatiner{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #555,5px 5px 10px #555;
+    margin: 30px auto;
+
+}
+
+.about-box{
+    padding: 10px;
+}
+
+.about-box img{
+    width: 100%;
+    height: 700px;
+}
+
+.about-box-1{
+    padding: 100px 40px;
+}
+
+.about-box-1 h5{
+     font-family: "Trans-light";
+     font-weight: 500;
+     font-size: 2rem;
+     line-height: 60px;
+}
+
+.about-box-1 h6{
+    margin-top: 80px;
+    font-size: 1.2rem;
+    font-family: "Trans-light";
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.about-box-1 p{
+    font-size: 0.9rem;
+    font-family: "Trans-light";
+    font-weight: 500;
+    color: #555;
+}
+
+/* -----book container--- */
+
+.book{
+    width: 100%;
+}
+
+.book-container{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #555,5px 5px 10px #555;
+    padding: 10px;
+}
+
+.book-box img{
+    width: 100%;
+    mix-blend-mode: color-burn;
+    background: #fff;
+}
+
+.book-box-1{
+    padding: 100px 20px;
+}
+
+.book-box-1 h2{
+    font-family: "Trans-light";
+    font-size: 2.5rem;
+    line-height: 60px;
+    font-weight: 500;
+}
+
+.book-box-1 p{
+    font-family: "Trans-light";
+    font-size: 1.2rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.book-box-1 span{
+    display: block;
+    font-family: "Trans-light";
+    font-size: 4rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.book-box-1 button{
+    width: 120px;
+    height: 40px;
+    align-content: center;
+    font-family: "Trans-light";
+    border-radius: 5px;
+    border: 1px solid #555;
+}
+/* ----Gallery container-- */
+.gallery{
+    width: 100%;
+}
+.gallery-container{
+    width: 90%;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #555,5px 5px 10px #555;
+    display: grid;
+    grid-gap: .2rem;
+    padding: 10px;
+    grid-template-columns: repeat(4,1fr);
+}
+.gallery-box{
+    min-height: 200px;
+    border: 1px solid #555;
+}
+.gallery-box:nth-child(2){
+     grid-column: 2 / span 2 ;
+}
+
+.gallery-box:nth-child(4){
+    grid-row: 2 / span 4;
+}
+.gallery-box:nth-child(9){
+    grid-column-start: 4;
+    grid-row: 2 / span 4;
+}
+.gallery-box:nth-child(5){
+    grid-column-start: 2;
+    grid-row: 2;
+}
+.gallery-box:nth-child(6){
+    grid-column-start: 3;
+    grid-row: 2;
+}
+.gallery-box:nth-child(7){
+    grid-column-start: 2;
+    grid-row: 3/span 3;
+}
+.gallery-box:nth-child(8){
+    grid-column-start: 3;
+    grid-row: 3/span 3;
+}
+
+.gallery-box img{
+    height: 100%;
+    width: 100%;
+}
+
+/* -----------blog container------------- */
+
+.blog{
+    width: 100%;
+}
+.blog-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: 5px 5px 10px #555,5px 5px 10px #555;
+    padding: 10px;
+    border-radius: 10px;
+    width: 90%;
+    margin: 30px auto;   
+}
+
+.blog-slider{
+    height: 80vh;
+    overflow: auto;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+
+.blog-title{
+     color: #000;
+    font-size: 2.5rem;
+    line-height: 100px;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.blog-box{
+   display: grid;
+   grid-template-columns: repeat(auto-fit , minmax(300px,1fr));
+   padding: 20px;
+}
+
+.blog-box-items{
+    min-height: 300px;
+    background-color: lightgrey;
+
+}
+.blog-items-1{
+    padding: 15px;
+}
+
+.blog-items-2{
+    padding: 15px;
+}
+.blog-box-items img{
+   height: 300px;
+   width: 100%;
+}
+
+.blog-user{
+    position: relative;
+}
+.blog-user i{
+    font-size: 2rem;
+    display: inline-block;
+}
+.blog-user span{
+    position: absolute;
+    display: inline-block;
+}
+
+.blog-details{
+    margin-top: 40px;
+}
+
+.blog-details h2{
+  font-family: "Trans-light";
+  font-size: 1.5rem;
+  line-height: 60px;
+  font-weight: 500;
+}
+
+.blog-details p{
+    font-family: "Trans-light";
+    font-size: .8rem;
+    color: #555;
+    line-height: 20px;
+}
+
+.blog-details hr {
+  width: 100%;
+  margin-top: 90px;
+}
+
+.blog-views{
+    display: grid;
+    position: relative;
+}
+
+.views-show{
+    font-family: "trans-light";
+    font-size: .8rem;
+}
+#cmd{
+    margin-left: 5px;
+}
+.views-show small{
+    font-size: .9rem;
+}
+.views{
+    position: absolute;
+    right: 0;
+    font-size: 1.3rem;
+    color: red;
+}
+
+/* ----------contact container---------- */
+
+.contact{
+    width: 100%;
+}
+.contact-container{
+    width: 90%;
+    /* min-height: 100vh; */
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(300px , 1fr));
+    box-shadow: 5px 5px 10px #555,5px 5px 10px #555;
+    padding: 10px;
+    border-radius: 10px; 
+}
+.contact-box{
+    height: 600px;
+}
+.contact-box-2{
+    padding: 20px;
+}
+.contact-box img{
+    height: 100%;
+    width: 100%;
+}
+
+.contact-box h2{
+    font-weight: 500;
+    font-size: 1.8rem;
+    font-family: "Trans-light";
+}
+
+.contact-box h6{
+    font-weight: 500;
+    font-size: .8rem;
+    font-family: "Trans-light";
+}
+
+.input-container{
+    margin: 20px auto;
+     /* background: red; */
+}
+form label{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: "Trans-light";
+}
+form input{
+    width: 100%;
+    height: 40px;
+}
+form textarea{
+    width: 100%;
+    height: 100px;
+}
+form button{
+    background: #555;
+    color: #fff;
+    font-family: "Trans-light";
+    font-size: 1.1rem;
+    padding: 0px 20px;
+    width: 130px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+
+/* ---------contact-details------------- */
+.contact-details{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    box-shadow: 5px 5px 10px #555,5px 5px 10px #555;
+    border-radius: 10px;
+    padding: 20px 0;
+}
+
+.contact-icons{
+    width: 100%;
+    text-align: center;
+}
+
+.contact-icons i{
+    font-size: 2rem;
+}
+.footer{
+    width: 100%;
+    margin-top:20px;
+    text-align: center;
+}
+.footer p{
+    font-size: .9rem;
+    font-family: "Trans-light";
+}
