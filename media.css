@@ -206,6 +206,75 @@
        grid-column: 1 / span 4; */
      }
      .gallery-box{
-        height: 370px;
+        height: 350px;
     }
+
+    /* -----Blog------ */
+    .blog-container{
+        padding: 0;
+    }
+    .blog-title{
+        font-size: 2rem;
+        line-height: 60px;
+        margin-bottom: 0;
+    }
+    .blog-slider{
+        margin: 0;
+        padding: 0;
+    }
+    .blog-items-1{
+        padding: 15px 10px;
+    }
+    
+    .blog-items-2{
+        padding: 10px;
+    }
+    .blog-box-items img{
+       height: 300px;
+       width: 100%;
+    }
+
+
+    .blog-user i{
+        font-size: 2rem;
+    }
+    .blog-user span{
+        font-size: .8rem;
+    }
+    .blog-user small{
+        font-size: .65rem;
+    }
+
+    .blog-details{
+        margin-top: 10px;
+    }
+    
+    .blog-details h2{
+      font-size: 1.3rem;
+      line-height: 40px;
+    }
+    
+    .blog-details p{
+        font-size: .7rem;
+        line-height: 20px;
+        text-align: justify;
+    }
+    
+    .blog-details hr {
+      margin-top: 80px;
+    }
+        
+    .views-show{
+        font-size: .5rem;
+    }
+
+    .views-show small{
+        font-size: .7rem;
+    }
+    .views{
+        font-size: 1rem;
+    }
+    
+    
+
 }
