@@ -33,14 +33,15 @@ nav{
 }
 
 .active{
-    color: rgba(30, 122, 221, 0.9);
+    color: #ffda43;
 }
 
 #logo{
     line-height: 60px;
     padding: 0px 60px;
     grid-area: logos;
-    color: #fff;
+    color: #ffda43;
+    user-select: none;
 }
 
 nav h2{
@@ -75,6 +76,11 @@ nav ul li a{
     text-decoration:none ;
 }
 
+nav ul li a:hover{
+    color: #ffda43;
+    transition: all .5s;
+}
+
 
 .home-section{
     display: grid;
@@ -90,6 +96,10 @@ nav ul li a{
     font-size: 60px;
     letter-spacing: 5px;
     color: #fff;
+}
+
+.home-section h1 span{
+    color: #ffda43;
 }
 
 .home-section h6{
@@ -116,6 +126,12 @@ nav ul li a{
     font-size: 0.7rem;
     letter-spacing: 3px;
     padding: 0px 10px;
+}
+
+.home-section button:hover{
+    color: #ffda43;
+    border: 1px solid #ffda43;
+    transition: all .5s;
 }
 
 /* ---------portfolio container----------- */
@@ -152,6 +168,11 @@ nav ul li a{
     color: #fff;
     height: 472px;
     border: 1px solid #555;
+}
+
+.portfolio-box .box:hover{
+    transform: scale(1.02);
+    transition: all .5s;
 }
 
 .img1{
@@ -218,6 +239,7 @@ nav ul li a{
 .about-box img{
     width: 100%;
     height: 700px;
+    object-fit: cover;
 }
 
 .about-box-1{
@@ -225,7 +247,6 @@ nav ul li a{
 }
 
 .about-box-1 h5{
-     font-family: "Trans-light";
      font-weight: 500;
      font-size: 2rem;
      line-height: 60px;
@@ -234,14 +255,12 @@ nav ul li a{
 .about-box-1 h6{
     margin-top: 80px;
     font-size: 1.2rem;
-    font-family: "Trans-light";
     font-weight: 500;
     line-height: 40px;
 }
 
 .about-box-1 p{
     font-size: 0.9rem;
-    font-family: "Trans-light";
     font-weight: 500;
     color: #555;
 }
@@ -273,14 +292,12 @@ nav ul li a{
 }
 
 .book-box-1 h2{
-    font-family: "Trans-light";
     font-size: 2.5rem;
     line-height: 60px;
     font-weight: 500;
 }
 
 .book-box-1 p{
-    font-family: "Trans-light";
     font-size: 1.2rem;
     color: #555;
     font-weight: 500;
@@ -288,7 +305,6 @@ nav ul li a{
 
 .book-box-1 span{
     display: block;
-    font-family: "Trans-light";
     font-size: 4rem;
     color: #555;
     font-weight: 500;
@@ -298,9 +314,25 @@ nav ul li a{
     width: 120px;
     height: 40px;
     align-content: center;
-    font-family: "Trans-light";
     border-radius: 5px;
     border: 1px solid #555;
+    background: #555;
+    outline: none;
+    color: #fff;
+}
+
+.book-box-1 button:hover{
+    background: #000;
+    transition: all .5s;
+}
+.book-box-2{
+    width: 100%;
+}
+.book-box-2 img{
+    min-height: 100%;
+    width: 100%;
+    padding: 0;
+    object-fit: cover;
 }
 /* ----Gallery container-- */
 .gallery{
@@ -351,6 +383,7 @@ nav ul li a{
 .gallery-box img{
     height: 100%;
     width: 100%;
+    object-fit: contain;
 }
 
 /* -----------blog container------------- */
@@ -461,6 +494,9 @@ nav ul li a{
     position: absolute;
     right: 0;
     font-size: 1.3rem;
+    color: #000;
+}
+.views:hover{
     color: red;
 }
 
@@ -487,6 +523,7 @@ nav ul li a{
 .contact-box img{
     height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
 .contact-box h2{
@@ -529,6 +566,11 @@ form button{
     height: 40px;
     border: none;
     outline: none;
+    border-radius: 5px;
+}
+form button:hover{
+    background: #000;
+    transition: all .5s;
 }
 
 /* ---------contact-details------------- */
@@ -550,6 +592,7 @@ form button{
 
 .contact-icons i{
     font-size: 2rem;
+    cursor: pointer;
 }
 .footer{
     width: 100%;
@@ -559,4 +602,24 @@ form button{
 .footer p{
     font-size: .9rem;
     font-family: "Trans-light";
+}
+
+.bxl-pinterest-alt:hover{
+    color: red;
+    transition: all .5s;
+}
+
+.bxl-twitter:hover{
+    color: rgb(109, 169, 192);
+    transition: all .5s;
+}
+.bxl-facebook-circle:hover{
+    color: navy;
+    transition: all .5s;
+}
+.bxl-instagram-alt:hover{
+    background: -webkit-linear-gradient(#515bda,#8134af,#dd2a7b,#feda77,#f58529);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all .5s;
 }
