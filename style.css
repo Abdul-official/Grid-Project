@@ -167,12 +167,13 @@ nav ul li a:hover{
     border-radius: 5px;
     color: #fff;
     height: 472px;
+    overflow: hidden;
     border: 1px solid #555;
 }
 
-.portfolio-box .box:hover{
-    transform: scale(1.02);
-    transition: all .5s;
+.portfolio-box .box:hover .intro{
+    transition: all 1s;
+    bottom: 0;
 }
 
 .img1{
@@ -217,6 +218,16 @@ nav ul li a:hover{
     top: 0;
     text-align: center;
     font-family: "Trans-light";
+}
+
+.intro{
+    position: absolute;
+    background: black;
+    text-align: center;
+    align-content: center;
+    bottom: -500px;
+    height: 410px;
+    color: #fff;
 }
 
 /* -----about-container---- */

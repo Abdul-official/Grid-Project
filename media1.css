@@ -99,6 +99,10 @@
         font-size: 1.6rem;
         line-height: 40px;
     }
+    .intro{
+        width: 100%;
+        height: 260px;
+    }
 
     /* ------------about----------- */
     .about-conatiner{
