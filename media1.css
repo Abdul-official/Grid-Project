@@ -184,7 +184,7 @@
 /* --------blog----------------- */
 .blog-container{
     padding: 0;
-    min-height: 100vh;
+    min-height: 50vh;
 }
 .blog-title{
     font-size: 2rem;
