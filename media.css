@@ -234,7 +234,7 @@
     }
     .blog-box{
         display: grid;
-        grid-template-columns: repeat(auto-fit , minmax(200px,1fr));
+        grid-template-columns: repeat(auto-fit , minmax(250px,1fr));
         padding: 10px;
      }
 
@@ -292,6 +292,13 @@
         font-size: 1rem;
     }
     /* --------contact------------- */
+    .contact-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));
+        padding: 10px; 
+    }
+    
+    
     .input-container{
         width: 100%;
     }
