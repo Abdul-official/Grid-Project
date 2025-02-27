@@ -1,0 +1,181 @@
+@media only screen and (min-width : 601px) and (max-width : 950px){
+    @font-face {
+        font-family: Trans-light;
+        src: url(./fonts/Transcend\ Light.otf);
+    }
+    *{
+        font-family: "Trans-light";
+    }
+
+    .home-container{
+        width: 100%;
+        height: 600px;
+    }
+
+    nav{
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+        grid-template-rows: repeat(2 , 1fr);
+        grid-template-areas: "logos"
+        "options";
+    }
+    
+    #check{
+        display: none;
+    }
+    
+    .active{
+        color: #ffda43;
+    }
+    
+    #logo{
+        display: block;
+        width: 100%;
+        line-height: 30px;
+        padding-top: 5px;
+        grid-area: logos;
+        text-align: center;
+    }
+    
+    nav h2{
+        font-weight: 500;
+        font-size: 2rem;
+        letter-spacing: 5px;
+    }
+    
+    #option{
+        grid-area: options;
+    }
+    
+    nav ul{
+        text-align: center;
+        line-height: 20px;
+    }
+    nav ul li{
+        display: inline-block;
+    }
+
+    nav ul li a{
+        margin-right: 10px;
+        font-size: .8rem;
+    }
+
+    .home-section h1{
+        font-size: 55px;
+        letter-spacing: 5px;
+    }
+    
+    .home-section h6{
+        font-size: .9rem;
+        letter-spacing: 3px;
+        font-weight: 500;
+    }
+    .home-section button{
+        width: 120px;
+        height: 40px;
+        margin: 10px 0px;
+        font-size: 0.65rem;
+        letter-spacing: 2px;
+        padding: 0;
+    }
+
+    /* ----------portfolio------------- */
+    .portfolio-box{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-title{
+        font-size: 2rem;
+        line-height: 60px;
+        margin-bottom: 0;
+    }
+
+    .portfolio-box .box{
+        height: 300px;
+    }
+
+    .box .portfolio-inner-title span{
+        font-size: 1.6rem;
+        line-height: 40px;
+    }
+
+    /* ------------about----------- */
+    .about-conatiner{
+        display: grid;
+        grid-template-columns: 1fr;    
+    }
+    .about-box-1{
+        padding: 10px 12px 15px 12px;
+    }
+    .about-box-1 p{
+        text-align: justify;
+    }
+
+    .about-box img{
+        height: 500px;
+    }
+
+    .about-box-1 h5{
+        font-size: 1.7rem;
+        line-height: 40px;
+   }
+   
+   .about-box-1 h6{
+       margin-top: 20px;
+       line-height: 30px;
+   }
+   
+   .about-box-1 p{
+       font-size: 0.8rem;
+   }
+
+   /* ---------------------- */
+   .book-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.book-box-1{
+    padding: 10px;
+}
+.book-box-2{
+    width: 100%;
+}
+.book-box-2 img{
+    min-height: 100%;
+    width: 100%;
+    padding: 0;
+}
+.book-container .book-box{
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.book-container .book-box-1{
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.book-box-1 h2{
+    font-size: 2.3rem;
+}
+
+.book-box-1 p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.book-box-1 span{
+    font-size: 3.5rem;
+    margin-top: 50px;
+}
+
+.book-box-1 button{
+    width: 120px;
+    height: 40px;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+
+    
+    
+}
