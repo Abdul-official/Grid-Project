@@ -243,6 +243,7 @@ nav ul li a:hover{
     border-radius: 10px;
     box-shadow: 5px 5px 10px #555,5px 5px 10px #555;
     margin: 30px auto;
+    padding: 10px;
 
 }
 
@@ -358,7 +359,7 @@ nav ul li a:hover{
     border-radius: 10px;
     box-shadow: 5px 5px 10px #555,5px 5px 10px #555;
     display: grid;
-    grid-gap: .2rem;
+    grid-gap: .1rem;
     padding: 10px;
     grid-template-columns: repeat(4,1fr);
 }
@@ -530,10 +531,11 @@ nav ul li a:hover{
     border-radius: 10px; 
 }
 .contact-box{
-    height: 600px;
+    height: 580px;
+    padding: 10px;
 }
 .contact-box-2{
-    padding: 20px;
+    padding: 10px 20px;
 }
 .contact-box img{
     height: 100%;
@@ -582,6 +584,7 @@ form button{
     border: none;
     outline: none;
     border-radius: 5px;
+    margin-top: 10px;
 }
 form button:hover{
     background: #000;
