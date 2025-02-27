@@ -133,9 +133,11 @@
    /* ---------------------- */
    .book-container{
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 .book-box-1{
+    min-height: 100%;
+    width: 100%;
     padding: 10px;
 }
 .book-box-2{
@@ -175,6 +177,78 @@
     margin-bottom: 10px;
 }
 
+/* --------blog----------------- */
+.blog-container{
+    padding: 0;
+}
+.blog-title{
+    font-size: 2rem;
+    line-height: 60px;
+    margin-bottom: 0;
+}
+.blog-slider{
+    margin: 0;
+    padding: 0;
+}
+.blog-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(400px,1fr));
+    padding: 10px;
+ }
+
+.blog-items{
+    width: 100%;
+}
+.blog-items-1{
+    width: 100%;
+    padding: 15px 10px;
+}
+
+.blog-items-2{
+    padding: 15px 10px;
+}
+.blog-box-items img{
+   height: 300px;
+   width: 100%;
+}
+
+.blog-user small{
+    /* background-color: red; */
+    font-size: .65rem;
+}
+
+.blog-details{
+    margin-top: 40px;
+}
+
+.blog-details h2{
+  font-size: 1.3rem;
+  line-height: 40px;
+}
+
+.blog-details p{
+    font-size: .7rem;
+    line-height: 20px;
+    text-align: justify;
+}
+.blog-box-items{
+    width: 100%;    
+}
+
+.blog-details hr {
+  margin-top:80px;
+}
+    
+.views-show{
+    font-size: .7rem;
+}
+
+.views-show small{
+    font-size: .9rem;
+}
+.views{
+    font-size: 1.3rem;
+}
 
     
     

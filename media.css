@@ -130,7 +130,7 @@
     /* --------book - container------ */
     .book-container{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
     .book-box-1{
         padding: 10px;
